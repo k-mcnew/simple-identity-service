@@ -1,0 +1,20 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <body>
+        <div class="row app-content" th:fragment="searchContent">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="searchInput" name="searchInput" placeholder="Type a last name to search the person service"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="search-btn" name="search-btn">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-xs-3">
+            </div>
+        </div>
+    </body>
+</html>

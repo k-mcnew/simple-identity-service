@@ -1,0 +1,59 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <body>
+        <div class="modal fade" id="personModal" tabindex="-1" role="dialog" th:fragment="personModal" aria-labelledby="gridSystemModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                        <h4 class="modal-title">Add Person Menu</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form id="addPersonForm">
+                            <div class="form-group">
+                                <label for="personModalFirstName" class="control-label">First Name:</label>
+                                <input type="text" class="form-control" id="personModalFirstName" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalMiddleName" class="control-label">Middle Name:</label>
+                                <input type="text" class="form-control" id="personModalMiddleName" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalLastName" class="control-label">Last Name:</label>
+                                <input type="text" class="form-control" id="personModalLastName" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalEmail" class="control-label">Email:</label>
+                                <input type="text" class="form-control" id="personModalEmail" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalAddressOne" class="control-label">Address One:</label>
+                                <input type="text" class="form-control" id="personModalAddressOne" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalAddressTwo" class="control-label">Address Two:</label>
+                                <input type="text" class="form-control" id="personModalAddressTwo" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalCity" class="control-label">City:</label>
+                                <input type="text" class="form-control" id="personModalCity" required="required" />
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalState" class="control-label">State:</label>
+                                <input type="text" class="form-control" id="personModalState" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="personModalZipcode" class="control-label">Zipcode:</label>
+                                <input type="text" class="form-control" id="personModalZipcode" required="required" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="addPersonBtn">Add Person</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

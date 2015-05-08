@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Getting Started: Serving Web Content</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/css/search.css" th:href="@{/css/search.css}"/>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div th:replace="/search/header :: searchHeader"></div>
+
+            <form id="searchForm" class="form-horizontal">
+                <div th:replace="/search/buttons :: searchButtons"></div>
+
+                <div th:replace="/search/messages :: msgCenter"></div>
+
+                <div th:replace="/search/content :: searchContent"></div>
+
+                <!--<div th:replace="/search/pagination :: searchPagination"></div>-->
+
+                <div class="container">
+                    <div th:replace="/search/results :: searchResults"></div>
+                </div>
+            </form>
+            <div class="the-pusher"></div>
+        </div>
+        <div th:replace="/search/footer :: searchFooter"></div>
+        <div th:replace="/search/personmodal :: personModal"></div>
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="/js/search.js" th:src="@{/js/search.js}"></script>
+    </body>
+</html>
